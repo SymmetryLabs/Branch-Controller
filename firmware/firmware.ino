@@ -4,7 +4,7 @@
 #include <EEPROM.h>
 #include "button.h"
 
-#define HOST 0x40
+#define HOST 0x4f
 //#define IP_ADDRESS_MACRO (10, 200, 1, 0x40)
 
 #define LEDS_PER_CHANNEL    105
