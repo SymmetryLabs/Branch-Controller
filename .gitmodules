@@ -1,0 +1,6 @@
+[submodule "Ethernet"]
+	path = Ethernet
+	url = https://github.com/treeoftenere/Ethernet.git
+[submodule "FastLED"]
+	path = FastLED
+	url = https://github.com/treeoftenere/FastLED.git

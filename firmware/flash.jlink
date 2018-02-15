@@ -1,4 +1,5 @@
-loadfile firmware.ino.generic_stm32f103c.bin
+#loadfile firmware.ino.generic_stm32f103c.bin
+loadfile firmware.ino.bin
 r
 g
 q

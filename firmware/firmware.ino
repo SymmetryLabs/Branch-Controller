@@ -4,6 +4,9 @@
 #include <EEPROM.h>
 #include "button.h"
 
+#define HOST 0x40
+//#define IP_ADDRESS_MACRO (10, 200, 1, 0x40)
+
 #define LEDS_PER_CHANNEL    105
 #define NUM_CHANNELS        8
 #define NUM_LEDS            (NUM_CHANNELS * LEDS_PER_CHANNEL)
@@ -144,8 +147,11 @@ void network_connect() {
       addr = get_address();
   }
   
-  mac[2] = addr;
-  IPAddress ip_addr(192, 168, 1, addr);
+//  mac[2] = addr;
+//  IPAddress ip_addr(192, 168, 1, addr);
+
+  mac[2] = HOST;
+  IPAddress ip_addr( 10, 200, 1, HOST );
   Ethernet.begin(mac, ip_addr);
   Udp.begin(UDP_PORT_NUMBER);
 }
